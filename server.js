@@ -105,4 +105,4 @@ app.use((error, _req, res, _next) => {
   console.error('Request handling failed:', error.message);
   res.status(500).json({ error: 'Something went wrong. Please try again.' });
 });
-app.listen(port, () => console.log(`Awaaz2Action is running at http://localhost:${port}`));
+app.listen(port, '0.0.0.0', () => console.log(`Awaaz2Action is running on 0.0.0.0:${port}`));
